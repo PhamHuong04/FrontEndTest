@@ -1,0 +1,192 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.web {
+    display: flex;
+}
+
+.nav {
+    background-color: #191718;
+    color: #fff;
+    width: 50%;
+}
+
+.nav .nav__text {
+    border-bottom: 1px solid rgb(126, 124, 124);
+    padding: 16px 20px;
+    color: #AAA;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 133px;
+    padding: 0 130px;
+}
+
+
+.content .logo {
+    display: flex;
+    width: 100%;
+}
+
+.content .logo img {
+    margin: 20px auto;
+    align-items: center;
+    max-width: 100%;
+}
+
+.box_content {
+    border: 1px none #EFEFEF;
+    background-color: #EFEFEF;
+    padding: 38px;
+    margin: 6px auto 40px;
+}
+
+.box_content .box__text {
+    margin: 0 20%;
+    text-align: center;
+
+}
+
+.box_content .box__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.box .box__title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.box {
+    margin: 0 -25px;
+}
+
+.box img {
+    float: left;
+}
+
+.box1 {
+    padding: 25px 25px;
+}
+
+.footer__content {
+    padding: 30px 130px;
+    border-top: 1px solid #AAA;
+}
+
+.icon i {
+    font-size: 24px;
+}
+
+.icon {
+    position: fixed;
+    top: 30px;
+    right: 10px;
+}
+
+input[type="checkbox"]:checked~.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+
+}
+
+.nav__text:hover {
+    background-color: #AAA;
+    color: #fff;
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+    .box {
+        margin: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+
+    .box_content {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .box1 .box__content {
+        text-align: justify;
+    }
+
+    .box_content .box__text {
+        margin: 0 5px;
+    }
+
+    .footer__content {
+        padding: 10px auto;
+        text-align: center;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (min-width:46.25em) and (max-width: 63.9375em) {
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .box1 .box__content {
+        text-align: justify;
+    }
+
+    .box_content .box__text {
+        margin: 0 10%;
+    }
+
+    .content {
+        padding: 0 50px;
+    }
+
+    .footer__content {
+        padding: 10px auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+
+    .icon {
+        display: none;
+    }
+
+
+    .box {
+        display: flex;
+    }
+
+
+}
