@@ -28,6 +28,10 @@ body {
     border-bottom: 1px solid rgb(126, 124, 124);
     padding: 16px 20px;
     color: #AAA;
+    
+}
+.nav a{
+    text-decoration: none;
 }
 
 .content {
